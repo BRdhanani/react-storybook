@@ -4,6 +4,6 @@ import './Input.css';
 export default function Input(props){
 	const { variant = 'standard', ...rest} = props;
 	return (
-		<Input className={`${'input'} ${variant}`} {...rest} />
+		<input className={`${'input'} ${variant}`} {...rest} />
 	)
 }
