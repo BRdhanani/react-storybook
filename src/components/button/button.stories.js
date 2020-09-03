@@ -1,9 +1,11 @@
 import React from 'react';
 import button from './button';
+import Center from '../Center/Center';
 
 export default {
 	title: 'Button',
-	component: button
+	component: button,
+	decorators: [story => <Center>{story()}</Center>]
 }
 
 export const Primary = () => <button variant='primary'>Primary</button>
